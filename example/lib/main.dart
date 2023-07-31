@@ -21,8 +21,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    print("Lookup symbol");
-    print(aubio_ffi.dylib.providesSymbol("new_aubio_tempo"));
+    print(
+        "Lookup symbol: ${aubio_ffi.dylib.providesSymbol('new_aubio_tempo')}");
     sumResult = aubio_ffi.sum(1, 2);
     sumAsyncResult = aubio_ffi.sumAsync(3, 4);
   }
