@@ -18,8 +18,8 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fmat.h"
+#include "../aubio_priv.h"
+#include "../fmat.h"
 
 uint_t
 aubio_io_validate_samplerate(const char_t *kind, const char_t *path, uint_t samplerate)

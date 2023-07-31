@@ -1,4 +1,3 @@
-
 import 'dart:async';
 import 'dart:ffi';
 import 'dart:io';
@@ -52,6 +51,7 @@ final DynamicLibrary _dylib = () {
 /// The bindings to the native functions in [_dylib].
 final AubioFfiBindings _bindings = AubioFfiBindings(_dylib);
 
+final dylib = _dylib;
 
 /// A request to compute `sum`.
 ///

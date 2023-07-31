@@ -18,11 +18,11 @@
  *
  */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "cvec.h"
-#include "mathutils.h"
-#include "spectral/awhitening.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../cvec.h"
+#include "../mathutils.h"
+#include "awhitening.h"
 
 #define aubio_spectral_whitening_default_relax_time   250   // in seconds, between 22 and 446
 #define aubio_spectral_whitening_default_decay        0.001 // -60dB attenuation

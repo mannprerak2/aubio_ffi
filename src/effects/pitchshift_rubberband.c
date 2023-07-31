@@ -18,12 +18,12 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_RUBBERBAND
 
-#include "fvec.h"
-#include "effects/pitchshift.h"
+#include "../fvec.h"
+#include "pitchshift.h"
 
 #include <rubberband/rubberband-c.h>
 

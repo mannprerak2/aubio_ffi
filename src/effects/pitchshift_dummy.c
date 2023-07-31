@@ -18,12 +18,12 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifndef HAVE_RUBBERBAND
 
-#include "fvec.h"
-#include "effects/pitchshift.h"
+#include "../fvec.h"
+#include "pitchshift.h"
 
 // TODO fallback pitch shifting implementation
 

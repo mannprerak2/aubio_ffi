@@ -18,15 +18,15 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "cvec.h"
-#include "spectral/specdesc.h"
-#include "spectral/phasevoc.h"
-#include "spectral/awhitening.h"
-#include "onset/peakpicker.h"
-#include "mathutils.h"
-#include "onset/onset.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../cvec.h"
+#include "../spectral/specdesc.h"
+#include "../spectral/phasevoc.h"
+#include "../spectral/awhitening.h"
+#include "peakpicker.h"
+#include "../mathutils.h"
+#include "onset.h"
 
 void aubio_onset_default_parameters (aubio_onset_t *o, const char_t * method);
 

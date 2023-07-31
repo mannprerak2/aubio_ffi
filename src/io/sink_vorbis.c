@@ -24,12 +24,12 @@
   https://xiph.org/vorbis/
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_VORBISENC
 
-#include "fmat.h"
-#include "io/ioutils.h"
+#include "../fmat.h"
+#include "ioutils.h"
 
 #include <vorbis/vorbisenc.h>
 #include <string.h> // strerror

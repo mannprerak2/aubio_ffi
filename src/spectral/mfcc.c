@@ -19,17 +19,17 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "fmat.h"
-#include "cvec.h"
-#include "mathutils.h"
-#include "vecutils.h"
-#include "spectral/fft.h"
-#include "spectral/filterbank.h"
-#include "spectral/filterbank_mel.h"
-#include "spectral/dct.h"
-#include "spectral/mfcc.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "../cvec.h"
+#include "../mathutils.h"
+#include "../vecutils.h"
+#include "fft.h"
+#include "filterbank.h"
+#include "filterbank_mel.h"
+#include "dct.h"
+#include "mfcc.h"
 
 /** Internal structure for mfcc object */
 

@@ -18,9 +18,9 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "spectral/dct.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "dct.h"
 
 #ifdef HAVE_FFTW3
 

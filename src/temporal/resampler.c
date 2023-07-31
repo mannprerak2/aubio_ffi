@@ -18,9 +18,9 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "temporal/resampler.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "resampler.h"
 
 #ifdef HAVE_SAMPLERATE
 

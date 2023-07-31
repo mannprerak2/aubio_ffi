@@ -7,7 +7,7 @@
 //  - declare initialization as static
 //  - prefix public function with aubio_ooura_
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 void aubio_ooura_cdft(int n, int isgn, smpl_t *a, int *ip, smpl_t *w);
 void aubio_ooura_rdft(int n, int isgn, smpl_t *a, int *ip, smpl_t *w);

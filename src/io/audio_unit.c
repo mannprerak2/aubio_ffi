@@ -18,12 +18,12 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 #ifdef HAVE_AUDIO_UNIT
 
-#include "fvec.h"
-#include "fmat.h"
-#include "io/audio_unit.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "audio_unit.h"
 
 #include <AudioToolbox/AudioToolbox.h>
 

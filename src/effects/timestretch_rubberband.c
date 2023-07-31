@@ -18,14 +18,14 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_RUBBERBAND
 
-#include "fvec.h"
-#include "fmat.h"
-#include "io/source.h"
-#include "effects/timestretch.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "../io/source.h"
+#include "timestretch.h"
 
 #include <rubberband/rubberband-c.h>
 

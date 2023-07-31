@@ -27,12 +27,12 @@
  * see http://recherche.ircam.fr/equipes/pcm/pub/people/cheveign.html
  */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "mathutils.h"
-#include "cvec.h"
-#include "spectral/fft.h"
-#include "pitch/pitchyinfast.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../mathutils.h"
+#include "../cvec.h"
+#include "../spectral/fft.h"
+#include "pitchyinfast.h"
 
 struct _aubio_pitchyinfast_t
 {

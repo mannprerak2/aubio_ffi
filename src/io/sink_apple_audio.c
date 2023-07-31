@@ -18,13 +18,13 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_SINK_APPLE_AUDIO
-#include "fvec.h"
-#include "fmat.h"
-#include "io/sink_apple_audio.h"
-#include "io/ioutils.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "sink_apple_audio.h"
+#include "ioutils.h"
 
 // CFURLRef, CFURLCreateWithFileSystemPath, ...
 #include <CoreFoundation/CoreFoundation.h>

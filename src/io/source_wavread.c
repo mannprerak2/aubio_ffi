@@ -18,12 +18,12 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_WAVREAD
 
-#include "fvec.h"
-#include "fmat.h"
+#include "../fvec.h"
+#include "../fmat.h"
 #include "ioutils.h"
 #include "source_wavread.h"
 

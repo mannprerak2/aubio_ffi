@@ -18,14 +18,14 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_SNDFILE
 
 #include <sndfile.h>
 
-#include "fvec.h"
-#include "fmat.h"
+#include "../fvec.h"
+#include "../fmat.h"
 #include "ioutils.h"
 #include "source_sndfile.h"
 

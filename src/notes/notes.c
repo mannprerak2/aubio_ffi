@@ -18,11 +18,11 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "pitch/pitch.h"
-#include "onset/onset.h"
-#include "notes/notes.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../pitch/pitch.h"
+#include "../onset/onset.h"
+#include "notes.h"
 
 #define AUBIO_DEFAULT_NOTES_SILENCE -70.
 #define AUBIO_DEFAULT_NOTES_RELEASE_DROP 10.

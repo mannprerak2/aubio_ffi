@@ -18,7 +18,7 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_LIBAV
 
@@ -56,9 +56,9 @@
 #define av_packet_unref av_free_packet
 #endif
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "fmat.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../fmat.h"
 #include "ioutils.h"
 #include "source_avcodec.h"
 

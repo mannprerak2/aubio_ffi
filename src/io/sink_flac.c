@@ -24,12 +24,12 @@
   https://xiph.org/flac/
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_FLAC
 
-#include "fmat.h"
-#include "io/ioutils.h"
+#include "../fmat.h"
+#include "ioutils.h"
 
 #include <FLAC/metadata.h>
 #include <FLAC/stream_encoder.h>

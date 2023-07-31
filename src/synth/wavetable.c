@@ -19,11 +19,11 @@
 */
 
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "fmat.h"
-#include "utils/parameter.h"
-#include "synth/wavetable.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "../utils/parameter.h"
+#include "wavetable.h"
 
 #define WAVETABLE_LEN 4096
 

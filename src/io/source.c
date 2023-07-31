@@ -18,21 +18,21 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "fmat.h"
-#include "io/source.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "source.h"
 #ifdef HAVE_LIBAV
-#include "io/source_avcodec.h"
+#include "source_avcodec.h"
 #endif /* HAVE_LIBAV */
 #ifdef HAVE_SOURCE_APPLE_AUDIO
-#include "io/source_apple_audio.h"
+#include "source_apple_audio.h"
 #endif /* HAVE_SOURCE_APPLE_AUDIO */
 #ifdef HAVE_SNDFILE
-#include "io/source_sndfile.h"
+#include "source_sndfile.h"
 #endif /* HAVE_SNDFILE */
 #ifdef HAVE_WAVREAD
-#include "io/source_wavread.h"
+#include "source_wavread.h"
 #endif /* HAVE_WAVREAD */
 
 typedef void (*aubio_source_do_t)(aubio_source_t * s, fvec_t * data, uint_t * read);

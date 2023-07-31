@@ -30,9 +30,9 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "spectral/dct.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "dct.h"
 
 // function pointers prototypes
 typedef void (*aubio_dct_do_t)(aubio_dct_t * s, const fvec_t * input, fvec_t * output);

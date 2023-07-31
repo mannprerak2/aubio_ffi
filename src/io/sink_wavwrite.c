@@ -19,14 +19,14 @@
 */
 
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_WAVWRITE
 
-#include "fvec.h"
-#include "fmat.h"
-#include "io/sink_wavwrite.h"
-#include "io/ioutils.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "sink_wavwrite.h"
+#include "ioutils.h"
 
 #define MAX_SIZE 4096
 

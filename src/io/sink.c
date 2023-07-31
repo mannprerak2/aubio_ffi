@@ -18,18 +18,18 @@
 
 */
 
-#include "aubio_priv.h"
-#include "fvec.h"
-#include "fmat.h"
-#include "io/sink.h"
+#include "../aubio_priv.h"
+#include "../fvec.h"
+#include "../fmat.h"
+#include "sink.h"
 #ifdef HAVE_SINK_APPLE_AUDIO
-#include "io/sink_apple_audio.h"
+#include "sink_apple_audio.h"
 #endif /* HAVE_SINK_APPLE_AUDIO */
 #ifdef HAVE_SNDFILE
-#include "io/sink_sndfile.h"
+#include "sink_sndfile.h"
 #endif
 #ifdef HAVE_WAVWRITE
-#include "io/sink_wavwrite.h"
+#include "sink_wavwrite.h"
 #endif
 
 typedef void (*aubio_sink_do_t)(aubio_sink_t * s, fvec_t * data, uint_t write);

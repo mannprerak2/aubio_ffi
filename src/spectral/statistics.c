@@ -18,9 +18,9 @@
 
 */
 
-#include "aubio_priv.h"
-#include "cvec.h"
-#include "spectral/specdesc.h"
+#include "../aubio_priv.h"
+#include "../cvec.h"
+#include "specdesc.h"
 
 void aubio_specdesc_centroid (aubio_specdesc_t * o, const cvec_t * spec,
     fvec_t * desc);

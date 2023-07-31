@@ -18,14 +18,14 @@
 
 */
 
-#include "aubio_priv.h"
+#include "../aubio_priv.h"
 
 #ifdef HAVE_SOURCE_APPLE_AUDIO
 
-#include "fvec.h"
-#include "fmat.h"
+#include "../fvec.h"
+#include "../fmat.h"
 #include "ioutils.h"
-#include "io/source_apple_audio.h"
+#include "source_apple_audio.h"
 
 // ExtAudioFileRef, AudioStreamBasicDescription, AudioBufferList, ...
 #include <AudioToolbox/AudioToolbox.h>
