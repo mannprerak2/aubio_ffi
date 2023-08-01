@@ -1,5 +1,7 @@
+import 'dart:ffi';
+
+import 'package:aubio_ffi/aubio_bindings.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 import 'package:aubio_ffi/aubio_ffi.dart' as aubio_ffi;
 
@@ -15,22 +17,19 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late int sumResult;
-  late Future<int> sumAsyncResult;
+  late DynamicLibrary aubioDll;
+  late AubioBindings aubioBindings;
 
   @override
   void initState() {
+    aubioDll = aubio_ffi.openAubioDynamicLibrary();
+    aubioBindings = aubio_ffi.initAubioBindings(dynamicLibrary: aubioDll);
     super.initState();
-    print(
-        "Lookup symbol: ${aubio_ffi.dylib.providesSymbol('new_aubio_tempo')}");
-    sumResult = aubio_ffi.sum(1, 2);
-    sumAsyncResult = aubio_ffi.sumAsync(3, 4);
   }
 
   @override
   Widget build(BuildContext context) {
     const textStyle = TextStyle(fontSize: 25);
-    const spacerSmall = SizedBox(height: 10);
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -41,30 +40,10 @@ class _MyAppState extends State<MyApp> {
             padding: const EdgeInsets.all(10),
             child: Column(
               children: [
-                const Text(
-                  'This calls a native function through FFI that is shipped as source in the package. '
-                  'The native code is built as part of the Flutter Runner build.',
-                  style: textStyle,
-                  textAlign: TextAlign.center,
-                ),
-                spacerSmall,
                 Text(
-                  'sum(1, 2) = $sumResult',
+                  'Provides new_fvec: ${aubioDll.providesSymbol("new_fvec")}',
                   style: textStyle,
                   textAlign: TextAlign.center,
-                ),
-                spacerSmall,
-                FutureBuilder<int>(
-                  future: sumAsyncResult,
-                  builder: (BuildContext context, AsyncSnapshot<int> value) {
-                    final displayValue =
-                        (value.hasData) ? value.data : 'loading';
-                    return Text(
-                      'await sumAsync(3, 4) = $displayValue',
-                      style: textStyle,
-                      textAlign: TextAlign.center,
-                    );
-                  },
                 ),
               ],
             ),

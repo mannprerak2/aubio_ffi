@@ -10,7 +10,6 @@ add_library(aubio_ffi SHARED
 )
 
 set_target_properties(aubio_ffi PROPERTIES
-  PUBLIC_HEADER aubio_ffi.h
   OUTPUT_NAME "aubio_ffi"
 )
 
