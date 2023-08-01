@@ -1,5 +1,5 @@
 name: aubio_ffi
-description: A new Flutter FFI plugin project.
+description: An Aubio plugin using dart:ffi
 version: 0.0.1
 homepage: https://github.com/mannprerak2/aubio_dart_ffi
 
