@@ -438,9 +438,9 @@ class AubioBindings {
   }
 
   late final _cvec_norm_get_dataPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Pointer<smpl_t> Function(
-              ffi.Pointer<cvec_t>)>>('cvec_norm_get_data');
+          ffi
+          .NativeFunction<ffi.Pointer<smpl_t> Function(ffi.Pointer<cvec_t>)>>(
+      'cvec_norm_get_data');
   late final _cvec_norm_get_data = _cvec_norm_get_dataPtr
       .asFunction<ffi.Pointer<smpl_t> Function(ffi.Pointer<cvec_t>)>();
 
@@ -461,9 +461,9 @@ class AubioBindings {
   }
 
   late final _cvec_phas_get_dataPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Pointer<smpl_t> Function(
-              ffi.Pointer<cvec_t>)>>('cvec_phas_get_data');
+          ffi
+          .NativeFunction<ffi.Pointer<smpl_t> Function(ffi.Pointer<cvec_t>)>>(
+      'cvec_phas_get_data');
   late final _cvec_phas_get_data = _cvec_phas_get_dataPtr
       .asFunction<ffi.Pointer<smpl_t> Function(ffi.Pointer<cvec_t>)>();
 
@@ -1809,9 +1809,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_resamplerPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_resampler_t>)>>('del_aubio_resampler');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_resampler_t>)>>(
+      'del_aubio_resampler');
   late final _del_aubio_resampler = _del_aubio_resamplerPtr
       .asFunction<void Function(ffi.Pointer<aubio_resampler_t>)>();
 
@@ -2582,9 +2582,9 @@ class AubioBindings {
   }
 
   late final _new_aubio_pvocPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Pointer<aubio_pvoc_t> Function(
-              uint_t, uint_t)>>('new_aubio_pvoc');
+          ffi
+          .NativeFunction<ffi.Pointer<aubio_pvoc_t> Function(uint_t, uint_t)>>(
+      'new_aubio_pvoc');
   late final _new_aubio_pvoc = _new_aubio_pvocPtr
       .asFunction<ffi.Pointer<aubio_pvoc_t> Function(int, int)>();
 
@@ -2755,9 +2755,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_filterbankPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_filterbank_t>)>>('del_aubio_filterbank');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_filterbank_t>)>>(
+      'del_aubio_filterbank');
   late final _del_aubio_filterbank = _del_aubio_filterbankPtr
       .asFunction<void Function(ffi.Pointer<aubio_filterbank_t>)>();
 
@@ -3141,9 +3141,9 @@ class AubioBindings {
   }
 
   late final _aubio_mfcc_set_powerPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_mfcc_t>, smpl_t)>>('aubio_mfcc_set_power');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_mfcc_t>, smpl_t)>>(
+      'aubio_mfcc_set_power');
   late final _aubio_mfcc_set_power = _aubio_mfcc_set_powerPtr
       .asFunction<int Function(ffi.Pointer<aubio_mfcc_t>, double)>();
 
@@ -3185,9 +3185,9 @@ class AubioBindings {
   }
 
   late final _aubio_mfcc_set_scalePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_mfcc_t>, smpl_t)>>('aubio_mfcc_set_scale');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_mfcc_t>, smpl_t)>>(
+      'aubio_mfcc_set_scale');
   late final _aubio_mfcc_set_scale = _aubio_mfcc_set_scalePtr
       .asFunction<int Function(ffi.Pointer<aubio_mfcc_t>, double)>();
 
@@ -3623,9 +3623,9 @@ class AubioBindings {
   }
 
   late final _aubio_tss_set_thresholdPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tss_t>, smpl_t)>>('aubio_tss_set_threshold');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tss_t>, smpl_t)>>(
+      'aubio_tss_set_threshold');
   late final _aubio_tss_set_threshold = _aubio_tss_set_thresholdPtr
       .asFunction<int Function(ffi.Pointer<aubio_tss_t>, double)>();
 
@@ -3644,9 +3644,9 @@ class AubioBindings {
   }
 
   late final _aubio_tss_set_alphaPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tss_t>, smpl_t)>>('aubio_tss_set_alpha');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tss_t>, smpl_t)>>(
+      'aubio_tss_set_alpha');
   late final _aubio_tss_set_alpha = _aubio_tss_set_alphaPtr
       .asFunction<int Function(ffi.Pointer<aubio_tss_t>, double)>();
 
@@ -3665,9 +3665,9 @@ class AubioBindings {
   }
 
   late final _aubio_tss_set_betaPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tss_t>, smpl_t)>>('aubio_tss_set_beta');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tss_t>, smpl_t)>>(
+      'aubio_tss_set_beta');
   late final _aubio_tss_set_beta = _aubio_tss_set_betaPtr
       .asFunction<int Function(ffi.Pointer<aubio_tss_t>, double)>();
 
@@ -3711,9 +3711,9 @@ class AubioBindings {
   }
 
   late final _aubio_pitch_set_tolerancePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_pitch_t>,
-              smpl_t)>>('aubio_pitch_set_tolerance');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_pitch_t>, smpl_t)>>(
+      'aubio_pitch_set_tolerance');
   late final _aubio_pitch_set_tolerance = _aubio_pitch_set_tolerancePtr
       .asFunction<int Function(ffi.Pointer<aubio_pitch_t>, double)>();
 
@@ -3824,9 +3824,9 @@ class AubioBindings {
   }
 
   late final _aubio_pitch_set_silencePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_pitch_t>, smpl_t)>>('aubio_pitch_set_silence');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_pitch_t>, smpl_t)>>(
+      'aubio_pitch_set_silence');
   late final _aubio_pitch_set_silence = _aubio_pitch_set_silencePtr
       .asFunction<int Function(ffi.Pointer<aubio_pitch_t>, double)>();
 
@@ -4016,9 +4016,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_awhiteningPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_onset_t>,
-              uint_t)>>('aubio_onset_set_awhitening');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, uint_t)>>(
+      'aubio_onset_set_awhitening');
   late final _aubio_onset_set_awhitening = _aubio_onset_set_awhiteningPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, int)>();
 
@@ -4058,9 +4058,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_compressionPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_onset_t>,
-              smpl_t)>>('aubio_onset_set_compression');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_compression');
   late final _aubio_onset_set_compression = _aubio_onset_set_compressionPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4098,9 +4098,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_silencePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_onset_t>, smpl_t)>>('aubio_onset_set_silence');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_silence');
   late final _aubio_onset_set_silence = _aubio_onset_set_silencePtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4175,9 +4175,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_thresholdPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_onset_t>,
-              smpl_t)>>('aubio_onset_set_threshold');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_threshold');
   late final _aubio_onset_set_threshold = _aubio_onset_set_thresholdPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4197,9 +4197,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_minioiPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_onset_t>, uint_t)>>('aubio_onset_set_minioi');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, uint_t)>>(
+      'aubio_onset_set_minioi');
   late final _aubio_onset_set_minioi = _aubio_onset_set_minioiPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, int)>();
 
@@ -4219,9 +4219,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_minioi_sPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_onset_t>, smpl_t)>>('aubio_onset_set_minioi_s');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_minioi_s');
   late final _aubio_onset_set_minioi_s = _aubio_onset_set_minioi_sPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4241,9 +4241,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_minioi_msPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_onset_t>,
-              smpl_t)>>('aubio_onset_set_minioi_ms');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_minioi_ms');
   late final _aubio_onset_set_minioi_ms = _aubio_onset_set_minioi_msPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4263,9 +4263,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_delayPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_onset_t>, uint_t)>>('aubio_onset_set_delay');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, uint_t)>>(
+      'aubio_onset_set_delay');
   late final _aubio_onset_set_delay = _aubio_onset_set_delayPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, int)>();
 
@@ -4285,9 +4285,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_delay_sPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_onset_t>, smpl_t)>>('aubio_onset_set_delay_s');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_delay_s');
   late final _aubio_onset_set_delay_s = _aubio_onset_set_delay_sPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4307,9 +4307,9 @@ class AubioBindings {
   }
 
   late final _aubio_onset_set_delay_msPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_onset_t>, smpl_t)>>('aubio_onset_set_delay_ms');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_onset_t>, smpl_t)>>(
+      'aubio_onset_set_delay_ms');
   late final _aubio_onset_set_delay_ms = _aubio_onset_set_delay_msPtr
       .asFunction<int Function(ffi.Pointer<aubio_onset_t>, double)>();
 
@@ -4630,9 +4630,9 @@ class AubioBindings {
   }
 
   late final _aubio_tempo_set_silencePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tempo_t>, smpl_t)>>('aubio_tempo_set_silence');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tempo_t>, smpl_t)>>(
+      'aubio_tempo_set_silence');
   late final _aubio_tempo_set_silence = _aubio_tempo_set_silencePtr
       .asFunction<int Function(ffi.Pointer<aubio_tempo_t>, double)>();
 
@@ -4672,9 +4672,9 @@ class AubioBindings {
   }
 
   late final _aubio_tempo_set_thresholdPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_tempo_t>,
-              smpl_t)>>('aubio_tempo_set_threshold');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tempo_t>, smpl_t)>>(
+      'aubio_tempo_set_threshold');
   late final _aubio_tempo_set_threshold = _aubio_tempo_set_thresholdPtr
       .asFunction<int Function(ffi.Pointer<aubio_tempo_t>, double)>();
 
@@ -4791,9 +4791,9 @@ class AubioBindings {
   }
 
   late final _aubio_tempo_set_tatum_signaturePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_tempo_t>,
-              uint_t)>>('aubio_tempo_set_tatum_signature');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tempo_t>, uint_t)>>(
+      'aubio_tempo_set_tatum_signature');
   late final _aubio_tempo_set_tatum_signature =
       _aubio_tempo_set_tatum_signaturePtr
           .asFunction<int Function(ffi.Pointer<aubio_tempo_t>, int)>();
@@ -4908,9 +4908,9 @@ class AubioBindings {
   }
 
   late final _aubio_tempo_set_delayPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tempo_t>, sint_t)>>('aubio_tempo_set_delay');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tempo_t>, sint_t)>>(
+      'aubio_tempo_set_delay');
   late final _aubio_tempo_set_delay = _aubio_tempo_set_delayPtr
       .asFunction<int Function(ffi.Pointer<aubio_tempo_t>, int)>();
 
@@ -4931,9 +4931,9 @@ class AubioBindings {
   }
 
   late final _aubio_tempo_set_delay_sPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tempo_t>, smpl_t)>>('aubio_tempo_set_delay_s');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tempo_t>, smpl_t)>>(
+      'aubio_tempo_set_delay_s');
   late final _aubio_tempo_set_delay_s = _aubio_tempo_set_delay_sPtr
       .asFunction<int Function(ffi.Pointer<aubio_tempo_t>, double)>();
 
@@ -4954,9 +4954,9 @@ class AubioBindings {
   }
 
   late final _aubio_tempo_set_delay_msPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_tempo_t>, smpl_t)>>('aubio_tempo_set_delay_ms');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_tempo_t>, smpl_t)>>(
+      'aubio_tempo_set_delay_ms');
   late final _aubio_tempo_set_delay_ms = _aubio_tempo_set_delay_msPtr
       .asFunction<int Function(ffi.Pointer<aubio_tempo_t>, double)>();
 
@@ -5071,9 +5071,9 @@ class AubioBindings {
   }
 
   late final _aubio_notes_set_silencePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_notes_t>, smpl_t)>>('aubio_notes_set_silence');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_notes_t>, smpl_t)>>(
+      'aubio_notes_set_silence');
   late final _aubio_notes_set_silence = _aubio_notes_set_silencePtr
       .asFunction<int Function(ffi.Pointer<aubio_notes_t>, double)>();
 
@@ -5132,9 +5132,9 @@ class AubioBindings {
   }
 
   late final _aubio_notes_set_minioi_msPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_notes_t>,
-              smpl_t)>>('aubio_notes_set_minioi_ms');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_notes_t>, smpl_t)>>(
+      'aubio_notes_set_minioi_ms');
   late final _aubio_notes_set_minioi_ms = _aubio_notes_set_minioi_msPtr
       .asFunction<int Function(ffi.Pointer<aubio_notes_t>, double)>();
 
@@ -5185,9 +5185,9 @@ class AubioBindings {
   }
 
   late final _aubio_notes_set_release_dropPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_notes_t>,
-              smpl_t)>>('aubio_notes_set_release_drop');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_notes_t>, smpl_t)>>(
+      'aubio_notes_set_release_drop');
   late final _aubio_notes_set_release_drop = _aubio_notes_set_release_dropPtr
       .asFunction<int Function(ffi.Pointer<aubio_notes_t>, double)>();
 
@@ -5441,9 +5441,9 @@ class AubioBindings {
   }
 
   late final _aubio_sink_preset_sampleratePtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_sink_t>,
-              uint_t)>>('aubio_sink_preset_samplerate');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_sink_t>, uint_t)>>(
+      'aubio_sink_preset_samplerate');
   late final _aubio_sink_preset_samplerate = _aubio_sink_preset_sampleratePtr
       .asFunction<int Function(ffi.Pointer<aubio_sink_t>, int)>();
 
@@ -5469,9 +5469,9 @@ class AubioBindings {
   }
 
   late final _aubio_sink_preset_channelsPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(ffi.Pointer<aubio_sink_t>,
-              uint_t)>>('aubio_sink_preset_channels');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_sink_t>, uint_t)>>(
+      'aubio_sink_preset_channels');
   late final _aubio_sink_preset_channels = _aubio_sink_preset_channelsPtr
       .asFunction<int Function(ffi.Pointer<aubio_sink_t>, int)>();
 
@@ -6083,9 +6083,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_wavetablePtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_wavetable_t>)>>('del_aubio_wavetable');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_wavetable_t>)>>(
+      'del_aubio_wavetable');
   late final _del_aubio_wavetable = _del_aubio_wavetablePtr
       .asFunction<void Function(ffi.Pointer<aubio_wavetable_t>)>();
 
@@ -6341,9 +6341,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_parameterPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_parameter_t>)>>('del_aubio_parameter');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_parameter_t>)>>(
+      'del_aubio_parameter');
   late final _del_aubio_parameter = _del_aubio_parameterPtr
       .asFunction<void Function(ffi.Pointer<aubio_parameter_t>)>();
 
@@ -7203,9 +7203,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_pitchfcombPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_pitchfcomb_t>)>>('del_aubio_pitchfcomb');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_pitchfcomb_t>)>>(
+      'del_aubio_pitchfcomb');
   late final _del_aubio_pitchfcomb = _del_aubio_pitchfcombPtr
       .asFunction<void Function(ffi.Pointer<aubio_pitchfcomb_t>)>();
 
@@ -7269,9 +7269,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_pitchyinfftPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_pitchyinfft_t>)>>('del_aubio_pitchyinfft');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_pitchyinfft_t>)>>(
+      'del_aubio_pitchyinfft');
   late final _del_aubio_pitchyinfft = _del_aubio_pitchyinfftPtr
       .asFunction<void Function(ffi.Pointer<aubio_pitchyinfft_t>)>();
 
@@ -7289,8 +7289,8 @@ class AubioBindings {
   }
 
   late final _aubio_pitchyinfft_get_tolerancePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_pitchyinfft_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_pitchyinfft_t>)>>(
       'aubio_pitchyinfft_get_tolerance');
   late final _aubio_pitchyinfft_get_tolerance =
       _aubio_pitchyinfft_get_tolerancePtr
@@ -7331,8 +7331,8 @@ class AubioBindings {
   }
 
   late final _aubio_pitchyinfft_get_confidencePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_pitchyinfft_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_pitchyinfft_t>)>>(
       'aubio_pitchyinfft_get_confidence');
   late final _aubio_pitchyinfft_get_confidence =
       _aubio_pitchyinfft_get_confidencePtr
@@ -7377,9 +7377,9 @@ class AubioBindings {
   }
 
   late final _new_aubio_pitchspecacfPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Pointer<aubio_pitchspecacf_t> Function(
-              uint_t)>>('new_aubio_pitchspecacf');
+          ffi
+          .NativeFunction<ffi.Pointer<aubio_pitchspecacf_t> Function(uint_t)>>(
+      'new_aubio_pitchspecacf');
   late final _new_aubio_pitchspecacf = _new_aubio_pitchspecacfPtr
       .asFunction<ffi.Pointer<aubio_pitchspecacf_t> Function(int)>();
 
@@ -7415,8 +7415,8 @@ class AubioBindings {
   }
 
   late final _aubio_pitchspecacf_get_tolerancePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_pitchspecacf_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_pitchspecacf_t>)>>(
       'aubio_pitchspecacf_get_tolerance');
   late final _aubio_pitchspecacf_get_tolerance =
       _aubio_pitchspecacf_get_tolerancePtr
@@ -7459,8 +7459,8 @@ class AubioBindings {
   }
 
   late final _aubio_pitchspecacf_get_confidencePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_pitchspecacf_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_pitchspecacf_t>)>>(
       'aubio_pitchspecacf_get_confidence');
   late final _aubio_pitchspecacf_get_confidence =
       _aubio_pitchspecacf_get_confidencePtr
@@ -7505,9 +7505,9 @@ class AubioBindings {
   }
 
   late final _new_aubio_pitchschmittPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Pointer<aubio_pitchschmitt_t> Function(
-              uint_t)>>('new_aubio_pitchschmitt');
+          ffi
+          .NativeFunction<ffi.Pointer<aubio_pitchschmitt_t> Function(uint_t)>>(
+      'new_aubio_pitchschmitt');
   late final _new_aubio_pitchschmitt = _new_aubio_pitchschmittPtr
       .asFunction<ffi.Pointer<aubio_pitchschmitt_t> Function(int)>();
 
@@ -7541,9 +7541,9 @@ class AubioBindings {
   }
 
   late final _new_aubio_pitchyinfastPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Pointer<aubio_pitchyinfast_t> Function(
-              uint_t)>>('new_aubio_pitchyinfast');
+          ffi
+          .NativeFunction<ffi.Pointer<aubio_pitchyinfast_t> Function(uint_t)>>(
+      'new_aubio_pitchyinfast');
   late final _new_aubio_pitchyinfast = _new_aubio_pitchyinfastPtr
       .asFunction<ffi.Pointer<aubio_pitchyinfast_t> Function(int)>();
 
@@ -7627,8 +7627,8 @@ class AubioBindings {
   }
 
   late final _aubio_pitchyinfast_get_tolerancePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_pitchyinfast_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_pitchyinfast_t>)>>(
       'aubio_pitchyinfast_get_tolerance');
   late final _aubio_pitchyinfast_get_tolerance =
       _aubio_pitchyinfast_get_tolerancePtr
@@ -7647,8 +7647,8 @@ class AubioBindings {
   }
 
   late final _aubio_pitchyinfast_get_confidencePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_pitchyinfast_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_pitchyinfast_t>)>>(
       'aubio_pitchyinfast_get_confidence');
   late final _aubio_pitchyinfast_get_confidence =
       _aubio_pitchyinfast_get_confidencePtr
@@ -7714,9 +7714,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_pitchmcombPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_pitchmcomb_t>)>>('del_aubio_pitchmcomb');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_pitchmcomb_t>)>>(
+      'del_aubio_pitchmcomb');
   late final _del_aubio_pitchmcomb = _del_aubio_pitchmcombPtr
       .asFunction<void Function(ffi.Pointer<aubio_pitchmcomb_t>)>();
 
@@ -8326,47 +8326,6 @@ class AubioBindings {
   late final _aubio_hist_dyn_notnull = _aubio_hist_dyn_notnullPtr.asFunction<
       void Function(ffi.Pointer<aubio_hist_t>, ffi.Pointer<fvec_t>)>();
 
-  /// A very short-lived native function.
-  ///
-  /// For very short-lived functions, it is fine to call them on the main isolate.
-  /// They will block the Dart execution while running the native function, so
-  /// only do this for native functions which are guaranteed to be short-lived.
-  int sum(
-    int a,
-    int b,
-  ) {
-    return _sum(
-      a,
-      b,
-    );
-  }
-
-  late final _sumPtr =
-      _lookup<ffi.NativeFunction<ffi.IntPtr Function(ffi.IntPtr, ffi.IntPtr)>>(
-          'sum');
-  late final _sum = _sumPtr.asFunction<int Function(int, int)>();
-
-  /// A longer lived native function, which occupies the thread calling it.
-  ///
-  /// Do not call these kind of native functions in the main isolate. They will
-  /// block Dart execution. This will cause dropped frames in Flutter applications.
-  /// Instead, call these native functions on a separate isolate.
-  int sum_long_running(
-    int a,
-    int b,
-  ) {
-    return _sum_long_running(
-      a,
-      b,
-    );
-  }
-
-  late final _sum_long_runningPtr =
-      _lookup<ffi.NativeFunction<ffi.IntPtr Function(ffi.IntPtr, ffi.IntPtr)>>(
-          'sum_long_running');
-  late final _sum_long_running =
-      _sum_long_runningPtr.asFunction<int Function(int, int)>();
-
   /// create beat tracking object
   ///
   /// \param winlen length of the onset detection window
@@ -8434,8 +8393,8 @@ class AubioBindings {
   }
 
   late final _aubio_beattracking_get_periodPtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
       'aubio_beattracking_get_period');
   late final _aubio_beattracking_get_period = _aubio_beattracking_get_periodPtr
       .asFunction<double Function(ffi.Pointer<aubio_beattracking_t>)>();
@@ -8455,8 +8414,8 @@ class AubioBindings {
   }
 
   late final _aubio_beattracking_get_period_sPtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
       'aubio_beattracking_get_period_s');
   late final _aubio_beattracking_get_period_s =
       _aubio_beattracking_get_period_sPtr
@@ -8477,8 +8436,8 @@ class AubioBindings {
   }
 
   late final _aubio_beattracking_get_bpmPtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
       'aubio_beattracking_get_bpm');
   late final _aubio_beattracking_get_bpm = _aubio_beattracking_get_bpmPtr
       .asFunction<double Function(ffi.Pointer<aubio_beattracking_t>)>();
@@ -8498,8 +8457,8 @@ class AubioBindings {
   }
 
   late final _aubio_beattracking_get_confidencePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_beattracking_t>)>>(
       'aubio_beattracking_get_confidence');
   late final _aubio_beattracking_get_confidence =
       _aubio_beattracking_get_confidencePtr
@@ -8562,9 +8521,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_timestretchPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_timestretch_t>)>>('del_aubio_timestretch');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_timestretch_t>)>>(
+      'del_aubio_timestretch');
   late final _del_aubio_timestretch = _del_aubio_timestretchPtr
       .asFunction<void Function(ffi.Pointer<aubio_timestretch_t>)>();
 
@@ -8639,8 +8598,8 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_get_availablePtr = _lookup<
-          ffi.NativeFunction<
-              sint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+          ffi
+          .NativeFunction<sint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
       'aubio_timestretch_get_available');
   late final _aubio_timestretch_get_available =
       _aubio_timestretch_get_availablePtr
@@ -8660,8 +8619,8 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_get_latencyPtr = _lookup<
-          ffi.NativeFunction<
-              uint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
       'aubio_timestretch_get_latency');
   late final _aubio_timestretch_get_latency = _aubio_timestretch_get_latencyPtr
       .asFunction<int Function(ffi.Pointer<aubio_timestretch_t>)>();
@@ -8683,8 +8642,8 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_get_sampleratePtr = _lookup<
-          ffi.NativeFunction<
-              uint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
       'aubio_timestretch_get_samplerate');
   late final _aubio_timestretch_get_samplerate =
       _aubio_timestretch_get_sampleratePtr
@@ -8729,8 +8688,8 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_get_stretchPtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
       'aubio_timestretch_get_stretch');
   late final _aubio_timestretch_get_stretch = _aubio_timestretch_get_stretchPtr
       .asFunction<double Function(ffi.Pointer<aubio_timestretch_t>)>();
@@ -8775,8 +8734,8 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_get_pitchscalePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
       'aubio_timestretch_get_pitchscale');
   late final _aubio_timestretch_get_pitchscale =
       _aubio_timestretch_get_pitchscalePtr
@@ -8822,8 +8781,8 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_get_transposePtr = _lookup<
-          ffi.NativeFunction<
-              smpl_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+          ffi
+          .NativeFunction<smpl_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
       'aubio_timestretch_get_transpose');
   late final _aubio_timestretch_get_transpose =
       _aubio_timestretch_get_transposePtr
@@ -8843,9 +8802,9 @@ class AubioBindings {
   }
 
   late final _aubio_timestretch_resetPtr = _lookup<
-      ffi.NativeFunction<
-          uint_t Function(
-              ffi.Pointer<aubio_timestretch_t>)>>('aubio_timestretch_reset');
+          ffi
+          .NativeFunction<uint_t Function(ffi.Pointer<aubio_timestretch_t>)>>(
+      'aubio_timestretch_reset');
   late final _aubio_timestretch_reset = _aubio_timestretch_resetPtr
       .asFunction<int Function(ffi.Pointer<aubio_timestretch_t>)>();
 
@@ -8888,9 +8847,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_pitchshiftPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_pitchshift_t>)>>('del_aubio_pitchshift');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_pitchshift_t>)>>(
+      'del_aubio_pitchshift');
   late final _del_aubio_pitchshift = _del_aubio_pitchshiftPtr
       .asFunction<void Function(ffi.Pointer<aubio_pitchshift_t>)>();
 
@@ -9078,9 +9037,9 @@ class AubioBindings {
   }
 
   late final _del_aubio_peakpickerPtr = _lookup<
-      ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Pointer<aubio_peakpicker_t>)>>('del_aubio_peakpicker');
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Pointer<aubio_peakpicker_t>)>>(
+      'del_aubio_peakpicker');
   late final _del_aubio_peakpicker = _del_aubio_peakpickerPtr
       .asFunction<void Function(ffi.Pointer<aubio_peakpicker_t>)>();
 
@@ -9174,7 +9133,9 @@ final class fvec_t extends ffi.Struct {
 
 /// unsigned integer
 typedef uint_t = ffi.UnsignedInt;
+typedef Dartuint_t = int;
 typedef smpl_t = ffi.Float;
+typedef Dartsmpl_t = double;
 
 /// Vector of real-valued phase and spectrum data
 ///
@@ -9220,6 +9181,7 @@ final class lvec_t extends ffi.Struct {
 }
 
 typedef lsmp_t = ffi.Double;
+typedef Dartlsmp_t = double;
 
 /// Buffer for real data
 final class fmat_t extends ffi.Struct {
@@ -9237,6 +9199,7 @@ final class fmat_t extends ffi.Struct {
 
 /// character
 typedef char_t = ffi.Char;
+typedef Dartchar_t = int;
 
 final class _aubio_resampler_t extends ffi.Struct {
   external ffi.Pointer<ffi.Void> dummy;
@@ -9298,22 +9261,28 @@ final class _aubio_dct_t extends ffi.Struct {
 }
 
 /// function pointers prototypes
-typedef aubio_dct_do_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_dct_t> s, ffi.Pointer<fvec_t> input,
-            ffi.Pointer<fvec_t> output)>>;
+typedef aubio_dct_do_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_dct_do_tFunction>>;
+typedef aubio_dct_do_tFunction = ffi.Void Function(ffi.Pointer<aubio_dct_t> s,
+    ffi.Pointer<fvec_t> input, ffi.Pointer<fvec_t> output);
+typedef Dartaubio_dct_do_tFunction = void Function(ffi.Pointer<aubio_dct_t> s,
+    ffi.Pointer<fvec_t> input, ffi.Pointer<fvec_t> output);
 
 /// DCT object
 ///
 /// This object computes forward and backward DCT type 2 with orthonormal
 /// scaling.
 typedef aubio_dct_t = _aubio_dct_t;
-typedef aubio_dct_rdo_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_dct_t> s, ffi.Pointer<fvec_t> input,
-            ffi.Pointer<fvec_t> output)>>;
-typedef del_aubio_dct_t = ffi
-    .Pointer<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<aubio_dct_t> s)>>;
+typedef aubio_dct_rdo_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_dct_rdo_tFunction>>;
+typedef aubio_dct_rdo_tFunction = ffi.Void Function(ffi.Pointer<aubio_dct_t> s,
+    ffi.Pointer<fvec_t> input, ffi.Pointer<fvec_t> output);
+typedef Dartaubio_dct_rdo_tFunction = void Function(ffi.Pointer<aubio_dct_t> s,
+    ffi.Pointer<fvec_t> input, ffi.Pointer<fvec_t> output);
+typedef del_aubio_dct_t
+    = ffi.Pointer<ffi.NativeFunction<del_aubio_dct_tFunction>>;
+typedef del_aubio_dct_tFunction = ffi.Void Function(ffi.Pointer<aubio_dct_t> s);
+typedef Dartdel_aubio_dct_tFunction = void Function(ffi.Pointer<aubio_dct_t> s);
 
 /// phasevocoder internal object
 final class _aubio_pvoc_t extends ffi.Struct {
@@ -9704,22 +9673,35 @@ abstract class aubio_pitch_mode {
 }
 
 /// callback to get pitch candidate, defined below
-typedef aubio_pitch_detect_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_pitch_t> p,
-            ffi.Pointer<fvec_t> ibuf, ffi.Pointer<fvec_t> obuf)>>;
+typedef aubio_pitch_detect_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_pitch_detect_tFunction>>;
+typedef aubio_pitch_detect_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_pitch_t> p,
+    ffi.Pointer<fvec_t> ibuf,
+    ffi.Pointer<fvec_t> obuf);
+typedef Dartaubio_pitch_detect_tFunction = void Function(
+    ffi.Pointer<aubio_pitch_t> p,
+    ffi.Pointer<fvec_t> ibuf,
+    ffi.Pointer<fvec_t> obuf);
 
 /// pitch detection object
 typedef aubio_pitch_t = _aubio_pitch_t;
 
 /// callback to convert pitch from one unit to another, defined below
-typedef aubio_pitch_convert_t = ffi.Pointer<
-    ffi.NativeFunction<
-        smpl_t Function(smpl_t value, uint_t samplerate, uint_t bufsize)>>;
+typedef aubio_pitch_convert_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_pitch_convert_tFunction>>;
+typedef aubio_pitch_convert_tFunction = smpl_t Function(
+    smpl_t value, uint_t samplerate, uint_t bufsize);
+typedef Dartaubio_pitch_convert_tFunction = Dartsmpl_t Function(
+    Dartsmpl_t value, Dartuint_t samplerate, Dartuint_t bufsize);
 
 /// callback to fetch the confidence of the algorithm
 typedef aubio_pitch_get_conf_t
-    = ffi.Pointer<ffi.NativeFunction<smpl_t Function(ffi.Pointer<ffi.Void> p)>>;
+    = ffi.Pointer<ffi.NativeFunction<aubio_pitch_get_conf_tFunction>>;
+typedef aubio_pitch_get_conf_tFunction = smpl_t Function(
+    ffi.Pointer<ffi.Void> p);
+typedef Dartaubio_pitch_get_conf_tFunction = Dartsmpl_t Function(
+    ffi.Pointer<ffi.Void> p);
 
 /// structure to store object state
 final class _aubio_onset_t extends ffi.Struct {
@@ -9826,12 +9808,20 @@ final class _aubio_peakpicker_t extends ffi.Struct {
 }
 
 /// function pointer to thresholding function
-typedef aubio_thresholdfn_t = ffi
-    .Pointer<ffi.NativeFunction<smpl_t Function(ffi.Pointer<fvec_t> input)>>;
+typedef aubio_thresholdfn_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_thresholdfn_tFunction>>;
+typedef aubio_thresholdfn_tFunction = smpl_t Function(
+    ffi.Pointer<fvec_t> input);
+typedef Dartaubio_thresholdfn_tFunction = Dartsmpl_t Function(
+    ffi.Pointer<fvec_t> input);
 
 /// function pointer to peak-picking function
-typedef aubio_pickerfn_t = ffi.Pointer<
-    ffi.NativeFunction<uint_t Function(ffi.Pointer<fvec_t> input, uint_t pos)>>;
+typedef aubio_pickerfn_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_pickerfn_tFunction>>;
+typedef aubio_pickerfn_tFunction = uint_t Function(
+    ffi.Pointer<fvec_t> input, uint_t pos);
+typedef Dartaubio_pickerfn_tFunction = Dartuint_t Function(
+    ffi.Pointer<fvec_t> input, Dartuint_t pos);
 
 /// onset detection object
 typedef aubio_onset_t = _aubio_onset_t;
@@ -9989,6 +9979,7 @@ final class _aubio_beattracking_t extends ffi.Struct {
 
 /// signed integer
 typedef sint_t = ffi.Int;
+typedef Dartsint_t = int;
 
 /// tempo detection structure
 typedef aubio_tempo_t = _aubio_tempo_t;
@@ -10069,30 +10060,65 @@ final class _aubio_source_t extends ffi.Struct {
   external del_aubio_source_t s_del;
 }
 
-typedef aubio_source_do_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_source_t> s,
-            ffi.Pointer<fvec_t> data, ffi.Pointer<uint_t> read)>>;
+typedef aubio_source_do_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_do_tFunction>>;
+typedef aubio_source_do_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_source_t> s,
+    ffi.Pointer<fvec_t> data,
+    ffi.Pointer<uint_t> read);
+typedef Dartaubio_source_do_tFunction = void Function(
+    ffi.Pointer<aubio_source_t> s,
+    ffi.Pointer<fvec_t> data,
+    ffi.Pointer<uint_t> read);
 
 /// media source object
 typedef aubio_source_t = _aubio_source_t;
-typedef aubio_source_do_multi_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_source_t> s,
-            ffi.Pointer<fmat_t> data, ffi.Pointer<uint_t> read)>>;
-typedef aubio_source_get_samplerate_t = ffi.Pointer<
-    ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_source_t> s)>>;
-typedef aubio_source_get_channels_t = ffi.Pointer<
-    ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_source_t> s)>>;
-typedef aubio_source_get_duration_t = ffi.Pointer<
-    ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_source_t> s)>>;
-typedef aubio_source_seek_t = ffi.Pointer<
-    ffi.NativeFunction<
-        uint_t Function(ffi.Pointer<aubio_source_t> s, uint_t seek)>>;
-typedef aubio_source_close_t = ffi.Pointer<
-    ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_source_t> s)>>;
-typedef del_aubio_source_t = ffi.Pointer<
-    ffi.NativeFunction<ffi.Void Function(ffi.Pointer<aubio_source_t> s)>>;
+typedef aubio_source_do_multi_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_do_multi_tFunction>>;
+typedef aubio_source_do_multi_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_source_t> s,
+    ffi.Pointer<fmat_t> data,
+    ffi.Pointer<uint_t> read);
+typedef Dartaubio_source_do_multi_tFunction = void Function(
+    ffi.Pointer<aubio_source_t> s,
+    ffi.Pointer<fmat_t> data,
+    ffi.Pointer<uint_t> read);
+typedef aubio_source_get_samplerate_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_get_samplerate_tFunction>>;
+typedef aubio_source_get_samplerate_tFunction = uint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef Dartaubio_source_get_samplerate_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef aubio_source_get_channels_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_get_channels_tFunction>>;
+typedef aubio_source_get_channels_tFunction = uint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef Dartaubio_source_get_channels_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef aubio_source_get_duration_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_get_duration_tFunction>>;
+typedef aubio_source_get_duration_tFunction = uint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef Dartaubio_source_get_duration_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef aubio_source_seek_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_seek_tFunction>>;
+typedef aubio_source_seek_tFunction = uint_t Function(
+    ffi.Pointer<aubio_source_t> s, uint_t seek);
+typedef Dartaubio_source_seek_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_source_t> s, Dartuint_t seek);
+typedef aubio_source_close_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_source_close_tFunction>>;
+typedef aubio_source_close_tFunction = uint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef Dartaubio_source_close_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef del_aubio_source_t
+    = ffi.Pointer<ffi.NativeFunction<del_aubio_source_tFunction>>;
+typedef del_aubio_source_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_source_t> s);
+typedef Dartdel_aubio_source_tFunction = void Function(
+    ffi.Pointer<aubio_source_t> s);
 
 final class _aubio_sink_t extends ffi.Struct {
   external ffi.Pointer<ffi.Void> sink;
@@ -10114,31 +10140,57 @@ final class _aubio_sink_t extends ffi.Struct {
   external del_aubio_sink_t s_del;
 }
 
-typedef aubio_sink_do_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_sink_t> s, ffi.Pointer<fvec_t> data,
-            uint_t write)>>;
+typedef aubio_sink_do_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_do_tFunction>>;
+typedef aubio_sink_do_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_sink_t> s, ffi.Pointer<fvec_t> data, uint_t write);
+typedef Dartaubio_sink_do_tFunction = void Function(
+    ffi.Pointer<aubio_sink_t> s, ffi.Pointer<fvec_t> data, Dartuint_t write);
 
 /// media sink object
 typedef aubio_sink_t = _aubio_sink_t;
-typedef aubio_sink_do_multi_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(ffi.Pointer<aubio_sink_t> s, ffi.Pointer<fmat_t> data,
-            uint_t write)>>;
-typedef aubio_sink_preset_samplerate_t = ffi.Pointer<
-    ffi.NativeFunction<
-        uint_t Function(ffi.Pointer<aubio_sink_t> s, uint_t samplerate)>>;
-typedef aubio_sink_preset_channels_t = ffi.Pointer<
-    ffi.NativeFunction<
-        uint_t Function(ffi.Pointer<aubio_sink_t> s, uint_t channels)>>;
-typedef aubio_sink_get_samplerate_t = ffi
-    .Pointer<ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_sink_t> s)>>;
-typedef aubio_sink_get_channels_t = ffi
-    .Pointer<ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_sink_t> s)>>;
-typedef aubio_sink_close_t = ffi
-    .Pointer<ffi.NativeFunction<uint_t Function(ffi.Pointer<aubio_sink_t> s)>>;
-typedef del_aubio_sink_t = ffi.Pointer<
-    ffi.NativeFunction<ffi.Void Function(ffi.Pointer<aubio_sink_t> s)>>;
+typedef aubio_sink_do_multi_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_do_multi_tFunction>>;
+typedef aubio_sink_do_multi_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_sink_t> s, ffi.Pointer<fmat_t> data, uint_t write);
+typedef Dartaubio_sink_do_multi_tFunction = void Function(
+    ffi.Pointer<aubio_sink_t> s, ffi.Pointer<fmat_t> data, Dartuint_t write);
+typedef aubio_sink_preset_samplerate_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_preset_samplerate_tFunction>>;
+typedef aubio_sink_preset_samplerate_tFunction = uint_t Function(
+    ffi.Pointer<aubio_sink_t> s, uint_t samplerate);
+typedef Dartaubio_sink_preset_samplerate_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_sink_t> s, Dartuint_t samplerate);
+typedef aubio_sink_preset_channels_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_preset_channels_tFunction>>;
+typedef aubio_sink_preset_channels_tFunction = uint_t Function(
+    ffi.Pointer<aubio_sink_t> s, uint_t channels);
+typedef Dartaubio_sink_preset_channels_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_sink_t> s, Dartuint_t channels);
+typedef aubio_sink_get_samplerate_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_get_samplerate_tFunction>>;
+typedef aubio_sink_get_samplerate_tFunction = uint_t Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef Dartaubio_sink_get_samplerate_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef aubio_sink_get_channels_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_get_channels_tFunction>>;
+typedef aubio_sink_get_channels_tFunction = uint_t Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef Dartaubio_sink_get_channels_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef aubio_sink_close_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_sink_close_tFunction>>;
+typedef aubio_sink_close_tFunction = uint_t Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef Dartaubio_sink_close_tFunction = Dartuint_t Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef del_aubio_sink_t
+    = ffi.Pointer<ffi.NativeFunction<del_aubio_sink_tFunction>>;
+typedef del_aubio_sink_tFunction = ffi.Void Function(
+    ffi.Pointer<aubio_sink_t> s);
+typedef Dartdel_aubio_sink_tFunction = void Function(
+    ffi.Pointer<aubio_sink_t> s);
 
 final class _aubio_sampler_t extends ffi.Struct {
   @uint_t()
@@ -10239,10 +10291,12 @@ abstract class aubio_log_level {
 /// \param data optional closure used by the callback
 ///
 /// See @ref utils/test-log.c for an example of logging function.
-typedef aubio_log_function_t = ffi.Pointer<
-    ffi.NativeFunction<
-        ffi.Void Function(sint_t level, ffi.Pointer<char_t> message,
-            ffi.Pointer<ffi.Void> data)>>;
+typedef aubio_log_function_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_log_function_tFunction>>;
+typedef aubio_log_function_tFunction = ffi.Void Function(
+    sint_t level, ffi.Pointer<char_t> message, ffi.Pointer<ffi.Void> data);
+typedef Dartaubio_log_function_tFunction = void Function(
+    Dartsint_t level, ffi.Pointer<char_t> message, ffi.Pointer<ffi.Void> data);
 
 /// Error reporting
 abstract class aubio_status {
@@ -10511,10 +10565,16 @@ typedef aubio_pitchmcomb_t = _aubio_pitchmcomb_t;
 final class _aubio_audio_unit_t extends ffi.Opaque {}
 
 typedef aubio_audio_unit_t = _aubio_audio_unit_t;
-typedef aubio_device_callback_t = ffi.Pointer<
-    ffi.NativeFunction<
-        uint_t Function(ffi.Pointer<ffi.Void> closure, ffi.Pointer<fmat_t> ibuf,
-            ffi.Pointer<fmat_t> obuf)>>;
+typedef aubio_device_callback_t
+    = ffi.Pointer<ffi.NativeFunction<aubio_device_callback_tFunction>>;
+typedef aubio_device_callback_tFunction = uint_t Function(
+    ffi.Pointer<ffi.Void> closure,
+    ffi.Pointer<fmat_t> ibuf,
+    ffi.Pointer<fmat_t> obuf);
+typedef Dartaubio_device_callback_tFunction = Dartuint_t Function(
+    ffi.Pointer<ffi.Void> closure,
+    ffi.Pointer<fmat_t> ibuf,
+    ffi.Pointer<fmat_t> obuf);
 
 /// TODO fallback time stretching implementation
 final class _aubio_timestretch_t extends ffi.Struct {

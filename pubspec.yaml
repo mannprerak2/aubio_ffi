@@ -1,7 +1,7 @@
 name: aubio_ffi
 description: An Aubio plugin using dart:ffi
 version: 0.0.1
-homepage: https://github.com/mannprerak2/aubio_dart_ffi
+homepage: https://github.com/mannprerak2/aubio_ffi
 
 environment:
   sdk: '>=3.0.1 <4.0.0'
@@ -13,11 +13,11 @@ dependencies:
   plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
-  ffi: ^2.0.1
-  ffigen: ^9.0.1
+  ffi: ^2.1.2
+  ffigen: ^11.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
